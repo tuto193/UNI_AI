@@ -50,7 +50,12 @@ class Pegboard(object):
         """
 
         # TODO Implement this!
+        # This are the only valid moves!
+        validMoves = [ "up", "right", "down", "left" ]
         moves = []
+        for x in size_outer:
+            for y in size_outer:
+
         return moves
 
     def move(self, move):
