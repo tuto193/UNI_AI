@@ -1,3 +1,9 @@
+# Daten von der Uni
+*.pdf
+*.csv
+*.zip
+*.directory
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
