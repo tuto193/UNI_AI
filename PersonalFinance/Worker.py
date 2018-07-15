@@ -1,7 +1,7 @@
 import math
-import Job.py
+import Job
 
-class Worker(Object):
+class Worker(object):
     """
     The representation of a Person with
     a job, hobbies and needs, and with a
@@ -14,11 +14,11 @@ class Worker(Object):
         self.gym = 0
         self.otherExpenses = 0
         self.otherEarnings = 0
-        self.job = Job( 'Minijob',9.46 )
+        self.job = Job.Job( 'Minijob',9.46 )
     
     #Setter-Methodes for all
-    def set_job(self, rate):
-        self.job = Job(rate)
+    def set_job(self, name, rate):
+        self.job = Job.Job(name,rate)
     def set_expenses(self, rent, food, gym, others):
         self.rent = rent
         self.food = food

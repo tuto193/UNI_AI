@@ -1,4 +1,4 @@
-class Job(Object):
+class Job(object):
     """
     Represents a Job, which is either paid
     hourly or monthly
