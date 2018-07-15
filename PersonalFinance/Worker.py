@@ -14,7 +14,7 @@ class Worker(object):
         self.gym = 0
         self.otherExpenses = 0
         self.otherEarnings = 0
-        self.job = Job.Job( 'Minijob',9.46 )
+        self.job = Job.Job( 'Minijob', 9.46 )
     
     #Setter-Methodes for all
     def set_job(self, name, rate):
@@ -32,8 +32,10 @@ class Worker(object):
         return self.food + self.rent + self.gym + self.otherExpenses
     def get_budget(self):
         return self.get_income + self.otherEarnings
+    def get_expectedBudget(self):
+        return self.job.get_monthly + self.otherEarnings
     def get_income(self):
-        return self.job.get_monthly
+        return self.job.income
 
 
 
